@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+html, body {
+    background-color: #AA77FF !important;
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.menu-buttons {
+    z-index: 1;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+.btn:hover {
+    border-color: #27E1C1 !important;
+    color: #27E1C1 !important;
+}
+
+.active {
+    color: white !important;
+}
+
+.active:hover {
+    color: #27E1C1 !important;
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.brand > span {
+    font-family: "action";
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #27E1C1 !important;
+}
+
+.brand:hover > span {
+    animation-name: tamaño-letra;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tamaño-letra {
+    from {filter: invert(0);}
+    to {filter: invert(1) hue-rotate(280deg);}
+}
+
+@keyframes cambiar-color {
+    0% {filter: hue-rotate(0deg) drop-shadow(0 0 0.75rem crimson);}
+    100% {filter: hue-rotate(360deg) drop-shadow(0 0 0.75rem blue);}
+}
+
+.row {
+    height: 80vh;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    text-align: center;
+    gap: 10px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#registrarse {
+    margin-top: 10px;
+}
+
+.formulario-registro > label {
+    color: white;
+    font-size: 30px;
+    font-family: "digital";
+}
+
+#popupdiv {
+    max-height: fit-content !important;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    font-family: "digital";
+}
+
+.login:hover > img {
+    animation: saltar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes saltar {
+    from {position: relative; bottom: 0px;}
+    to {position: relative; bottom: 5px;}
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.login > img {
+    height: 3.6vh;
+    transform: translate(-5px);
+}
+
+.formulario-registro > input {
+    font-size: 18px
+}
+
+.area {
+    width: 100%;
+    height: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}

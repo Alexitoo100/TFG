@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "action";
+    src: url(../fonts/ActionComics/Inversionz\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(../fonts/Digital/Digitalt.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');

@@ -1,0 +1,429 @@
+
+html, body {
+    background-color: #855eda !important;
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.lista > li:first-child {
+    margin-left: 15px;
+}
+
+.brand > span {
+    font-family: "action";
+    text-shadow: 2px 2px 2px black;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #27E1C1 !important;
+    font-size: 2em;
+}
+
+.brand:hover > span {
+    animation-name: tamaño-letra;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tamaño-letra {
+    from {filter: invert(0);}
+    to {filter: invert(1) hue-rotate(280deg);}
+}
+
+@keyframes cambiar-color {
+    0% {filter: hue-rotate(0deg) drop-shadow(0 0 0.75rem crimson);}
+    100% {filter: hue-rotate(360deg) drop-shadow(0 0 0.75rem blue);}
+}
+
+#seleccion {
+    color: #F7D060 !important;
+}
+
+.card {
+    margin-top: 30px;
+    width: 300px !important;
+    height: 470px !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    transition: 1s;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card:hover .card-img {
+    width: 102%;
+    filter: invert(20%) opacity(0.8);
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    font-family: roboto, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    transition: .5s;
+    opacity: 0;
+    color: white !important;
+}
+
+#popupdiv {
+    max-height: fit-content !important;
+    font-weight: bold;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+}
+
+.card-title {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.div-favoritos {
+    position: sticky;
+    z-index: 2;
+    text-align: right;
+}
+
+.div-favoritos i {
+    cursor: pointer;
+}
+
+.texto-plataformas {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.texto-lanzamiento {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.bienvenida-usu {
+    color: white !important;
+    text-shadow: 3px 3px 3px black;
+    margin-right: 10px;
+    animation-name: saltitos;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes saltitos {
+    from {
+        transform: translate(0, -3px);
+    }
+
+    to {
+        transform: translate(0, 0px);
+    }
+}
+
+
+.texto-precio {
+    position: relative;
+    z-index: 2;
+}
+
+.texto-genero {
+    position: relative;
+    z-index: 2;
+}
+
+.texto-certificaciones {
+    position: relative;
+    z-index: 2;
+}
+
+.texto-jugadores {
+    position: relative;
+    z-index: 2;
+}
+
+.card-text {
+    position: relative;
+    z-index: 2;
+}
+
+.card-body span {
+    position: absolute;
+    width: 25%;
+    height: 0;
+    background: #654E92;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+.card-body span:nth-child(2) {
+    left: 25%;
+}
+
+.card-body span:nth-child(3) {
+    left: 50%;
+}
+
+.card-body span:nth-child(4) {
+    left: 75%;
+}
+
+.card:hover .card-body span:nth-child(1){
+    height: 100%;
+    transition-delay: .5s;
+}
+
+.card:hover .card-body span:nth-child(2){
+    height: 100%;
+    transition-delay: 1s;
+    background-color: #37306B;
+}
+
+.card:hover .card-body span:nth-child(3){
+    height: 100%;
+    transition-delay: 1.5s;
+    background-color: #37306B;
+}
+
+.card:hover .card-body span:nth-child(4){
+    height: 100%;
+    transition-delay: 2s;
+}
+
+#logout {
+    cursor: pointer;
+    text-shadow: 3px 3px 3px black;
+}
+
+.administracion {
+    color: white;
+    padding-right: 10px;
+}
+
+.form-control {
+    width: fit-content !important;
+}
+
+.search-bar {
+    display: flex !important;
+    justify-content: end;
+    padding: 1vh !important;
+    background-color: #654E92;
+}
+
+.login > img {
+    height: 3em;
+    transform: translate(-5px);
+}
+
+#favoritos {
+    text-shadow: 3px 3px 3px black;
+    margin-right: 15px;
+}
+
+#favoritos:hover {
+    color: #FFD93D !important;
+    cursor: pointer;
+}
+
+@keyframes saltar {
+    from {position: relative; bottom: 0px;}
+    to {position: relative; bottom: 5px;}
+}
+
+.login:hover > img {
+    animation-name: saltar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+.btn:hover {
+    border-color: #27E1C1 !important;
+    color: #27E1C1 !important;
+}
+
+.active {
+    text-shadow: 3px 3px 3px black;
+    color: white !important;
+}
+
+.active:hover {
+    color: #FFD93D !important;
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ver-detalles {
+    position: relative;
+    bottom: 10%;
+    border-color: #654E92;
+    background-color: #D4ADFC;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    z-index: 2;
+    height: 50px;
+    width: 150px;
+}
+
+.ver-detalles:hover {
+    background-color: #F7D060;
+}
+
+.modal-container > .row > .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container > .row:first-child > .col, .modal-container > .row:nth-child(3) > .col {
+    color: #F7D060;
+}
+
+.modal-container > .row:nth-child(2) > .col {
+    color: white;
+}
+
+.modal-title {
+    text-transform: uppercase;
+}
+
+.modal-body {
+    background-color: #37306B;
+}
+
+label {
+    color: gray;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover, label:hover ~ label {
+    color: orange;
+}
+
+input[type = "radio"]:checked ~ label {
+    color: orange;
+}
+
+.busqueda-fav {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+.form-control {
+    width: 30vh !important;
+}
+
+.divisorGenero, .divisorPrecio {
+    margin-right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisorGenero label, .divisorPrecio label {
+    color: #FFD93D;
+    margin-right: 1em;
+}
+
+.divisorGenero select, .divisorPrecio input {
+    background-color: #37306B;
+    color: white;
+    border-radius: 4px;
+}
+
+.divisorPrecio input {
+    width: 100px;
+    margin: 4px;
+}
+
+.divisorPrecio input[type="button"] {
+    margin: 4px;
+    width: 75px;
+    color: white;
+    background-color: #654E92;
+    border-color: white;
+    border-width: 0.5px;
+}
+
+#no-resultados-fav, #no-resultados-main {
+    text-align: center;
+    color: white;
+    margin: 5%;
+}
+
+.texto-reseña {
+    width: 70vh;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+#totalGraficos, #totalOptimizacion, #totalJugabilidad {
+    color: white;
+    position: relative;
+    bottom: 0.5em;
+    left: 1vh;
+}
+
+

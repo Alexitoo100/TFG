@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+html, body {
+    background-color: #855eda !important;
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+.btn:hover {
+    border-color: #27E1C1 !important;
+    color: #27E1C1 !important;
+}
+
+.active {
+    text-shadow: 3px 3px 3px black;
+    color: white !important;
+}
+
+.active:hover {
+    color: #FFD93D !important;
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.brand > span {
+    font-family: "action";
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #27E1C1 !important;
+}
+
+@keyframes cambiar-color {
+    0% {filter: hue-rotate(0deg) drop-shadow(0 0 0.75rem crimson);}
+    100% {filter: hue-rotate(360deg) drop-shadow(0 0 0.75rem blue);}
+}
+
+.login > img {
+    height: 3em;
+    transform: translate(-5px);
+}
+
+.login:hover > img {
+    animation: saltar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes saltar {
+    from {position: relative; bottom: 0px;}
+    to {position: relative; bottom: 5px;}
+}
+
+.bienvenida-usu {
+    color: white !important;
+    text-shadow: 3px 3px 3px black;
+    margin-right: 10px;
+    animation-name: saltitos;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.administracion {
+    color: white;
+    padding-right: 10px;
+}
+
+#seleccion4 {
+    background-color: orange;
+    color: white;
+}
+
+@keyframes saltitos {
+    from {
+        transform: translate(0, -3px);
+    }
+
+    to {
+        transform: translate(0, 0px);
+    }
+}
+
+#logout {
+    text-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+
+#logout:hover {
+    color: #FFD93D !important;
+    cursor: pointer;
+}
+
+.tabla {
+    text-align: end;
+    margin: 30px;
+    background-color: #FFD93D !important;
+}
+
+#añadirForo {
+    margin: 10px;
+}
+
+.table > tbody > tr td{
+    text-align: center !important;
+}
+
+.table > thead > tr th{
+    text-align: center !important;
+}
+
+#favoritos {
+    text-shadow: 3px 3px 3px black;
+    margin-right: 15px;
+}
+
+#favoritos:hover {
+    color: #FFD93D !important;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #855eda;
+    color: white;
+}
+
+.modal-body {
+    background-color: #37306B;
+}
+
+.rowUpdate > .col {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.rowUpdate > .col > input {
+    text-align: center;
+    
+}

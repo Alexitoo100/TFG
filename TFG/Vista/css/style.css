@@ -1,0 +1,265 @@
+
+html, body {
+    background-color: #855eda !important;
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.login > img {
+    height: 3em;
+    transform: translate(-5px);
+}
+
+.brand > span {
+    font-family: "action";
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #27E1C1 !important;
+}
+
+.brand:hover > span {
+    animation-name: tamaño-letra;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tamaño-letra {
+    from {filter: invert(0);}
+    to {filter: invert(1) hue-rotate(280deg);}
+}
+
+@keyframes saltar {
+    from {position: relative; bottom: 0px;}
+    to {position: relative; bottom: 5px;}
+}
+
+#popupdiv {
+    max-height: fit-content !important;
+    font-weight: bold;
+}
+
+.administracion {
+    color: white;
+    padding-right: 10px;
+}
+
+.login:hover > img {
+    animation: saltar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cambiar-color {
+    0% {filter: hue-rotate(0deg) drop-shadow(0 0 0.75rem crimson);}
+    100% {filter: hue-rotate(360deg) drop-shadow(0 0 0.75rem blue);}
+}
+
+.context {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 40vh;
+    font-family: 'Exo', sans-serif;
+    z-index: 1;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.context button {
+    text-align: center;
+    font-size: 25px;
+}
+
+.context button:hover {
+    border-color: orange !important;
+    background-color: rgb(109, 72, 3);
+}
+
+.context a button {
+    text-decoration: none;
+    color: white;
+}
+
+.context a:hover button {
+    color: orange;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+.menu-buttons {
+    z-index: 1;
+}
+
+.bienvenida-usu {
+    color: white !important;
+    text-shadow: 3px 3px 3px black;
+    margin-right: 10px;
+    animation-name: saltitos;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes saltitos {
+    from {
+        transform: translate(0, -3px);
+    }
+
+    to {
+        transform: translate(0, 0px);
+    }
+}
+
+#logout {
+    text-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+
+#logout:hover {
+    color: #FFD93D !important;
+    cursor: pointer;
+}
+
+#favoritos {
+    text-shadow: 3px 3px 3px black;
+    margin-right: 15px;
+}
+
+#favoritos:hover {
+    color: #FFD93D !important;
+    cursor: pointer;
+}
+
+.active {
+    text-shadow: 3px 3px 3px black;
+    color: white !important;
+}
+
+.active:hover {
+    color: #FFD93D !important;
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.area{
+    width: 100%;
+    height: 100%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}

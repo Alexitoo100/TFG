@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+html, body {
+    background-color: #855eda !important;
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+.btn:hover {
+    border-color: #27E1C1 !important;
+    color: #27E1C1 !important;
+}
+
+.active {
+    color: white !important;
+}
+
+.active:hover {
+    color: #27E1C1 !important;
+}
+
+.login {
+    display: inline-block;
+    margin-right: 10px;
+}

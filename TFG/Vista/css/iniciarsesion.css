@@ -1,0 +1,148 @@
+
+html, body {
+    background-color: #855eda !important;
+    
+}
+
+#menu {
+    background-color: #37306B !important;
+}
+
+.brand > span {
+    font-family: "action";
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    animation-name: cambiar-color;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #27E1C1 !important;
+}
+
+@keyframes cambiar-color {
+    0% {filter: hue-rotate(0deg) drop-shadow(0 0 0.75rem crimson);}
+    100% {filter: hue-rotate(360deg) drop-shadow(0 0 0.75rem blue);}
+}
+
+.brand:hover > span {
+    animation-name: tamaño-letra;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tamaño-letra {
+    from {filter: invert(0);}
+    to {filter: invert(1) hue-rotate(280deg);}
+}
+
+.listado > li:first-child {
+    margin-left: 5px;
+}
+
+.btn-search {
+   color: white !important;
+   border-color: white !important;
+   background-color: transparent !important;
+}
+
+#foro-icon {
+    height: 1em;
+    transform: translate(0px, -10px);
+}
+
+.sonic > img {
+    height: 40em;
+    position: relative;
+    top: 5%;
+    z-index: 99 !important;
+}
+
+.mario {
+    display: flex;
+    justify-content: end;
+}
+
+.mario > img {
+    height: 50em;
+    position: relative;
+    bottom: 20%;
+    z-index: 99 !important;
+}
+
+.container-body {
+    width: 100% !important;
+}
+
+.log-row {
+    background-color: #E86A33;
+}
+
+#formulario-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#mail, #passwd {
+    width: fit-content;
+    font-size: 20px;
+}
+
+label[for="mail"], label[for="passwd"] {
+    font-size: 35px;
+    color: white;
+    font-family: "digital";
+}
+
+input[type="submit"] {
+    font-family: "digital";
+}
+
+.btn:hover {
+    border-color: #27E1C1 !important;
+    color: #27E1C1 !important;
+}
+
+.active {
+    color: white !important;
+}
+
+.active:hover {
+    color: #27E1C1 !important;
+}
+
+#login {
+    position: sticky;
+    display: inline-block;
+    margin-right: 10px;
+    z-index: 100 !important;
+}
+
+#registro a:hover {
+    color: orange;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+
+#registro a {
+    text-decoration: none; 
+    color: #F0F0F0;
+    font-family: "digital";
+    position: sticky;
+    z-index: 100 !important;
+}
+
+#popupdiv {
+    max-height: fit-content !important;
+    font-weight: bold;
+}
+
+#mensaje {
+    font-family: "digital";
+}
+
